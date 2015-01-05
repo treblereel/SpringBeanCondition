@@ -10,10 +10,9 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class UserDaoMysqlImpl implements UserDao{
-    private static final Logger LOG = LoggerFactory.getLogger(Main.class);
+    private static final Logger LOG = LoggerFactory.getLogger(UserDaoMysqlImpl.class);
 
 
-    @Override
     public void addUser() {
         LOG.info("UserDaoMysqlImpl.addUser");
 

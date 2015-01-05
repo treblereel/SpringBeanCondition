@@ -10,9 +10,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class UserDaoOracleImpl implements UserDao{
-    private static final Logger LOG = LoggerFactory.getLogger(Main.class);
+    private static final Logger LOG = LoggerFactory.getLogger(UserDaoOracleImpl.class);
 
-    @Override
     public void addUser() {
         LOG.info("UserDaoOracleImpl.addUser");
     }

@@ -26,14 +26,6 @@ public class Main {
         ApplicationContext ctx =
                 new AnnotationConfigApplicationContext(BeanConditionConfiguration.class);
     }
-
-    /**
-     *  lets check
-     */
-    @PostConstruct
-    public void initApp(){
-        userDao.addUser();
-    }
 }
 
 

@@ -8,7 +8,6 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * Created by chani on 1/5/15.
  */
 public class UserDaoMysqlCondition implements Condition {
-    @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         return Utils.getPropertyValue("db").equals("mysql");
     }
